@@ -1,0 +1,1 @@
+/Users/yannis/Desktop/Development/Low\ level\ programming/Rust/projects/data_types/target/release/data_types: /Users/yannis/Desktop/Development/Low\ level\ programming/Rust/projects/data_types/src/main.rs

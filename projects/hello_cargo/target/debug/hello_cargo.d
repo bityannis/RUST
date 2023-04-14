@@ -1,0 +1,1 @@
+/Users/yannis/Desktop/Development/Low\ level\ programming/Rust/projects/hello_cargo/target/debug/hello_cargo: /Users/yannis/Desktop/Development/Low\ level\ programming/Rust/projects/hello_cargo/src/main.rs
