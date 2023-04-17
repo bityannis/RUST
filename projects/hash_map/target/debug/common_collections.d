@@ -1,0 +1,1 @@
+/Users/yannis/Desktop/Development/Low\ level\ programming/Rust/projects/hash_map/target/debug/common_collections: /Users/yannis/Desktop/Development/Low\ level\ programming/Rust/projects/hash_map/src/main.rs
