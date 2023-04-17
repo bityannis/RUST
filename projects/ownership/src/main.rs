@@ -117,7 +117,7 @@ fn main() {
         println!("{}", s);
     }
     takes_ownership(s5);
-    // println!("{}", s5); ❌ s were moved into takes_ownership and is no longer valid because droped after fn call
+    // println!("{}", s5); ❌ s5 were moved into takes_ownership and is no longer valid because droped after fn call
 
     let s6 = String::from("hey");
 
