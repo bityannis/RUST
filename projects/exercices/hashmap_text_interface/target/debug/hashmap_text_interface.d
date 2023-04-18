@@ -1,0 +1,1 @@
+/Users/yannis/Desktop/Development/Low\ level\ programming/Rust/projects/exercices/hashmap_text_interface/target/debug/hashmap_text_interface: /Users/yannis/Desktop/Development/Low\ level\ programming/Rust/projects/exercices/hashmap_text_interface/src/main.rs
