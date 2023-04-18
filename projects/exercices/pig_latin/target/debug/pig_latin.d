@@ -1,0 +1,1 @@
+/Users/yannis/Desktop/Development/Low\ level\ programming/Rust/projects/exercices/pig_latin/target/debug/pig_latin: /Users/yannis/Desktop/Development/Low\ level\ programming/Rust/projects/exercices/pig_latin/src/main.rs
