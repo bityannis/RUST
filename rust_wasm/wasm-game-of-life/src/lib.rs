@@ -18,5 +18,5 @@ extern "C" {
 #[wasm_bindgen]
 pub fn greet(name: &str) {
     alert(&format!("{} greet you 🌍", name));
-    log(&format!("{} salute you from here aswell 👨🏻‍💻", name));
+    log(&format!("{} salut you from here aswell 👨🏻‍💻", name));
 }
