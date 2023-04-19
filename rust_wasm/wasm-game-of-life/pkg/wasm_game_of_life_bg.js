@@ -97,6 +97,7 @@ export function greet(name) {
     wasm.greet(ptr0, len0);
 }
 
+function notDefined(what) { return () => { throw new Error(`${what} is not defined`); }; }
 /**
 */
 export const Cell = Object.freeze({ Dead:0,"0":"Dead",Alive:1,"1":"Alive", });
@@ -179,6 +180,8 @@ export function __wbg_alert_d3b6e8db27c82dfa(arg0, arg1) {
 export function __wbg_log_55d0b01f9e295146(arg0, arg1) {
     console.log(getStringFromWasm0(arg0, arg1));
 };
+
+export const __wbg_random_afb3265527cf67c8 = typeof Math.random == 'function' ? Math.random : notDefined('Math.random');
 
 export function __wbindgen_throw(arg0, arg1) {
     throw new Error(getStringFromWasm0(arg0, arg1));

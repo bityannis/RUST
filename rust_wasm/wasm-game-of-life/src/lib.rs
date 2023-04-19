@@ -1,6 +1,7 @@
 #![allow(unused_variables)]
 use std::fmt;
 mod utils;
+extern crate js_sys;
 
 use wasm_bindgen::prelude::*;
 
@@ -86,18 +87,40 @@ impl Universe {
     // Public methods, exported to JavaScript.
     #[wasm_bindgen]
     pub fn new() -> Universe {
-        let width = 64;
-        let height = 64;
+        //Patterns
+        let width = 100;
+        let height = 100;
 
+        ////Predefine pattern generation
+        // let cells = (0..width * height)
+        //     .map(|i| {
+        //         if i % 2 == 0 || i % 7 == 0 {
+        //             Cell::Alive
+        //         } else {
+        //             Cell::Dead
+        //         }
+        //     })
+        //     .collect();
+
+        ////Random Generation
         let cells = (0..width * height)
-            .map(|i| {
-                if i % 2 == 0 || i % 7 == 0 {
+            .map(|_| {
+                if js_sys::Math::random() < 0.5 {
                     Cell::Alive
                 } else {
                     Cell::Dead
                 }
             })
             .collect();
+
+        ////Single spaceship
+        // let cells = vec![Cell::Dead; (width * height) as usize];
+        // let mut cells = vec![Cell::Dead; (width * height) as usize];
+        // cells[1] = Cell::Alive;
+        // cells[width as usize + 2] = Cell::Alive;
+        // cells[2 * width as usize] = Cell::Alive;
+        // cells[2 * width as usize + 1] = Cell::Alive;
+        // cells[2 * width as usize + 2] = Cell::Alive;
 
         Universe {
             width,
