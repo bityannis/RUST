@@ -110,6 +110,21 @@ impl Universe {
     pub fn render(&self) -> String {
         self.to_string()
     }
+
+    #[wasm_bindgen]
+    pub fn width(&self) -> u32 {
+        self.width
+    }
+
+    #[wasm_bindgen]
+    pub fn height(&self) -> u32 {
+        self.height
+    }
+
+    #[wasm_bindgen]
+    pub fn cells(&self) -> *const Cell {
+        self.cells.as_ptr()
+    }
 }
 
 impl fmt::Display for Universe {

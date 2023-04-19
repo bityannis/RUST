@@ -149,6 +149,27 @@ export class Universe {
             wasm.__wbindgen_free(r0, r1);
         }
     }
+    /**
+    * @returns {number}
+    */
+    width() {
+        const ret = wasm.universe_width(this.ptr);
+        return ret >>> 0;
+    }
+    /**
+    * @returns {number}
+    */
+    height() {
+        const ret = wasm.universe_height(this.ptr);
+        return ret >>> 0;
+    }
+    /**
+    * @returns {number}
+    */
+    cells() {
+        const ret = wasm.universe_cells(this.ptr);
+        return ret;
+    }
 }
 
 export function __wbg_alert_d3b6e8db27c82dfa(arg0, arg1) {

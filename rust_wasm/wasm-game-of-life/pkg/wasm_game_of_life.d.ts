@@ -25,4 +25,16 @@ export class Universe {
 * @returns {string}
 */
   render(): string;
+/**
+* @returns {number}
+*/
+  width(): number;
+/**
+* @returns {number}
+*/
+  height(): number;
+/**
+* @returns {number}
+*/
+  cells(): number;
 }
