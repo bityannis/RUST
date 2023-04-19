@@ -1,3 +1,3 @@
-[submodule "./rustlings"]
-    path = ./rustlings
-    url = https://github.com/bityannis/RUST.git
+[submodule "rustlings"]
+	path = rustlings
+	url = https://github.com/bityannis/RUST/tree/main/rustlings
