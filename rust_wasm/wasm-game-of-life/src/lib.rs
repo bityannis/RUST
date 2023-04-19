@@ -90,8 +90,8 @@ impl Universe {
         //Patterns
         let width = 100;
         let height = 100;
-        let h_offset = 40;
-        let v_offset = 45;
+        // let h_offset = 40;
+        // let v_offset = 45;
 
         //HI Pattern
         // let cells = (0..width * height)
@@ -99,13 +99,13 @@ impl Universe {
         //         let row = i / width;
         //         let col = i % width;
 
-        //         // bityannis initial pattern
+        //         // bityannis stable pattern
         //         if (row >= 20 && row < 25) && (col >= 20 && col < 40)
-        //             || (row >= 25 && row < 30) && (col >= 40 && col < 60)
-        //             || (row >= 30 && row < 35) && (col >= 60 && col < 80)
-        //             || (row >= 35 && row < 40) && (col >= 80 && col < 100)
-        //             || (row >= 20 && row < 40) && (col >= 100 && col < 110)
-        //             || (row >= 20 && row < 40) && (col >= 120 && col < 130)
+        //             || (row >= 20 && row < 25) && (col >= 41 && col < 42)
+        //             || (row >= 25 && row < 30) && (col >= 60 && col < 80)
+        //             || (row >= 30 && row < 35) && (col >= 80 && col < 100)
+        //             || (row >= 35 && row < 40) && (col >= 100 && col < 110)
+        //             || (row >= 35 && row < 40) && (col >= 120 && col < 130)
         //         {
         //             Cell::Alive
         //         } else {
